@@ -1,4 +1,4 @@
-@import "../utils/variables";
+ @import "../utils/variables";
 @import "../utils/mixins";
 @import "../base/typography";
 
@@ -26,7 +26,7 @@
     background-color: transparent;
     border: 0;
     padding: 15px 10px;
-    width: 15%;
+    width: 50%;
     text-align: center;
     &:focus {
       outline: none;
@@ -170,7 +170,6 @@ h2 {
     align-items: center;
     justify-content: space-around;
     margin-left: 70px;
-    line-height: 0;
     font-size: 14px;
     @include tablette-size {
       display: block;
@@ -211,7 +210,6 @@ li::marker {
     background: transparent;
   }
 
- 
   &__link {
     text-decoration: none;
     color: $color-black;
@@ -232,14 +230,16 @@ li::marker {
     padding-left: 10px;
     display: inline-flex;
     justify-content: space-between;
-    line-height: 0.5;
     & p {
+      display: block;
+
       font-size: 16px;
     }
   }
   & strong {
+    display: block;
+
     background: $color-white;
-    line-height: 0;
     color: $color-black;
     font-weight: $font-weight;
     font-size: 18px;
