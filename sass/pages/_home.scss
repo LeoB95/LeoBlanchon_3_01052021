@@ -211,23 +211,7 @@ li::marker {
     background: transparent;
   }
 
-  &__name {
-    font-size: 22px;
-    font-family: $content-font;
-    font-weight: $font-weight;
-    margin-bottom: 18px;
-    color: $color-black;
-    @include tablette-size {
-      padding: 15px 0 15px 15px;
-      width: 100%;
-    }
-    @include desktop-size {
-      padding: 15px 0 15px 15px;
-      width: 100%;
-      font: $font-weight;
-      font-size: 30px;
-    }
-  }
+ 
   &__link {
     text-decoration: none;
     color: $color-black;
