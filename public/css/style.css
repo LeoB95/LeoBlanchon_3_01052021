@@ -1,4 +1,4 @@
- @charset "UTF-8";
+@charset "UTF-8";
 /* Ombres des cards */
 /* Media queries responsive */
 /*Coleurs de base du site */
@@ -59,13 +59,14 @@ body {
   text-align: center;
   border-radius: 30px;
   font-size: 15px;
+  justify-content: center;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0 5px 15px 0 #c3c3c3;
   font-weight: bold;
   margin: 20px;
   padding: 15px 30px;
   transition: 0.2s;
-  width: 80%;
+  width: 70%;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .home__button {
@@ -584,7 +585,7 @@ body15 {
   background-color: transparent;
   border: 0;
   padding: 15px 10px;
-  width: 15%;
+  width: 50%;
   text-align: center;
 }
 .search__location input:focus {
@@ -741,7 +742,6 @@ h2 {
   align-items: center;
   justify-content: space-around;
   margin-left: 70px;
-  line-height: 0;
   font-size: 14px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -790,27 +790,6 @@ li::marker {
   text-decoration: none;
   background: transparent;
 }
-.article2__name {
-  font-size: 22px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  margin-bottom: 18px;
-  color: black;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .article2__name {
-    padding: 15px 0 15px 15px;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .article2__name {
-    padding: 15px 0 15px 15px;
-    width: 100%;
-    font: bold;
-    font-size: 30px;
-  }
-}
 .article2__link {
   text-decoration: none;
   color: black;
@@ -833,14 +812,14 @@ li::marker {
   padding-left: 10px;
   display: inline-flex;
   justify-content: space-between;
-  line-height: 0.5;
 }
 .article2__title p {
+  display: block;
   font-size: 16px;
 }
 .article2 strong {
+  display: block;
   background: white;
-  line-height: 0;
   color: black;
   font-weight: bold;
   font-size: 18px;
@@ -1218,13 +1197,14 @@ body15 {
   text-align: center;
   border-radius: 30px;
   font-size: 15px;
+  justify-content: center;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0 5px 15px 0 #c3c3c3;
   font-weight: bold;
   margin: 20px;
   padding: 15px 30px;
   transition: 0.2s;
-  width: 80%;
+  width: 70%;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .home__button {
