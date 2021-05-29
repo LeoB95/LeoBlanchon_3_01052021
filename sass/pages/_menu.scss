@@ -1,0 +1,103 @@
+@import "../layout/animations";
+@import "../layout/keyframes";
+@import "../components/buttons";
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.menu {
+  background-color: $color-background-menu;
+  & main img {
+    height: 270px;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: $title-size;
+    font-weight: $font-weight;
+    font-family: $title-font;
+    background-color: $color-background-menu;
+    position: absolute;
+    width: 100%;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 0 20px;
+    height: 10%;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    .like {
+      padding-right: 20px;
+    }
+  }
+
+  h4 {
+    margin: 40px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px 0 0 15px;
+    font-style: normal;
+    @include desktop-size {
+      display: block;
+      width: 100%;
+      justify-content: center;
+    }
+    &:after {
+      border-bottom: 2px solid $color-tertiary;
+      content: "";
+      display: block;
+      padding-top: 15px;
+      width: 40px;
+    }
+  }
+}
+.menu__article {
+  background: $color-background-menu;
+  padding: 20px;
+  display: block;
+
+  @include desktop-size {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    line-height: 0;
+    @extend %text-overflow;
+    @include desktop-size {
+      max-width: 30%;
+    }
+  }
+
+  %text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .title__choice {
+    display: block;
+    font-size: 16px;
+    font-weight: $font-weight;
+    padding: 10px;
+    padding-bottom: 5;
+    margin-left: 10px;
+  }
+  .subTitle__choice {
+    display: flex;
+    color: $color-footer;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .text {
+    width: 80%;
+    padding: 10px;
+    @extend %text-overflow;
+  }
+}

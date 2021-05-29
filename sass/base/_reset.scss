@@ -1,0 +1,15 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: $color-white;
+  color: $color-black;
+  font-family: $content-font;
+  font-size: 18px;
+  text-align: left;
+  @include desktop-size {
+    max-width: 1400px;
+  }
+}

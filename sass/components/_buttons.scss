@@ -1,0 +1,100 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.home__button {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 15px;
+  @include color-button;
+  @include box-shadow;
+  font-weight: $font-weight;
+  margin: 20px;
+  padding: 15px 30px;
+  transition: 0.2s;
+  width: 80%;
+  @include tablette-size {
+    margin: auto;
+    max-width: 70%;
+  }
+  @include desktop-size {
+    margin: auto;
+    max-width: 70%;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $color-white;
+  }
+  &:hover {
+    @include color-button;
+    @include box-shadow;
+  }
+}
+.menu__button {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 15px;
+  color: $color-white;
+  @include color-button;
+  @include box-shadow;
+  font-weight: $font-weight;
+  margin: 20px;
+  padding: 15px 30px;
+  transition: 0.2s;
+  width: auto;
+  @include desktop-size {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+  }
+}
+%likeanimated {
+  transition: 0.5s 0s ease;
+}
+
+.like {
+  display: inline;
+  position: relative;
+  margin-right: 22px;
+  margin-top: 4px;
+
+  i {
+    color: #9d9d9d;
+    font-size: 24px;
+    left: 50%;
+  }
+  .after-icon {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    &:hover {
+      color: $color-gradient;
+      opacity: 1;
+      z-index: 999;
+      @extend %likeanimated;
+    }
+    &:active {
+      color: $color-gradient;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 1;
+    @extend %likeanimated;
+  }
+
+  .before-icon:hover {
+    opacity: 0;
+    @extend %likeanimated;
+  }
+}
