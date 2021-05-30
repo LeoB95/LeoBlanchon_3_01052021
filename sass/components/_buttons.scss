@@ -8,13 +8,14 @@
   text-align: center;
   border-radius: 30px;
   font-size: 15px;
+  justify-content: center;
   @include color-button;
   @include box-shadow;
   font-weight: $font-weight;
   margin: 20px;
   padding: 15px 30px;
   transition: 0.2s;
-  width: 80%;
+  width: 70%;
   @include tablette-size {
     margin: auto;
     width: 50%;
@@ -55,6 +56,7 @@
     text-align: center;
     width: 40%;
     margin: auto;
+    margin-bottom: 30px;
   }
 }
 %likeanimated {
@@ -62,7 +64,6 @@
 }
 
 .like {
-  display: inline;
   position: relative;
   margin-right: 22px;
   margin-top: 4px;
@@ -81,9 +82,6 @@
       opacity: 1;
       z-index: 999;
       @extend %likeanimated;
-    }
-    &:active {
-      color: $color-gradient;
     }
   }
   &:hover {
