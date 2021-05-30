@@ -64,6 +64,8 @@ h2 {
   font-weight: $font-weight;
   font-family: $content-font;
   margin-bottom: 15px;
+   width: 100%;
+
   @include desktop-size {
     padding-left: 40px;
     font-size: 30px;
