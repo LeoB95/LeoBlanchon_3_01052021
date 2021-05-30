@@ -23,15 +23,12 @@
     position: absolute;
     width: 100%;
     margin-top: -30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 0 0 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 0 0 5px;
     height: 10%;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
-    .like {
-      padding-right: 20px;
-    }
   }
 
   h4 {
@@ -72,12 +69,12 @@
     @include desktop-size {
       max-width: 30%;
     }
-  }
 
-  %text-overflow {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    %text-overflow {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
   .title__choice {
     display: block;
