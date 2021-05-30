@@ -45,6 +45,10 @@ body {
   }
 }
 
+html {
+  animation: fade;
+}
+
 /*fichier imports police*/
 /* Ombres des cards */
 /* Media queries responsive */
@@ -116,7 +120,9 @@ body {
   }
 }
 
-.like .before-icon:hover, .like:hover, .like .after-icon:hover {
+.like .before-icon:hover,
+.like:hover,
+.like .after-icon:hover {
   transition: 0.5s 0s ease;
 }
 
@@ -625,6 +631,7 @@ h2 {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   margin-bottom: 15px;
+  width: 100%;
 }
 @media only screen and (min-width: 1024px) {
   h2 {
@@ -1254,7 +1261,9 @@ body15 {
   }
 }
 
-.like .after-icon:hover, .like:hover, .like .before-icon:hover {
+.like .after-icon:hover,
+.like:hover,
+.like .before-icon:hover {
   transition: 0.5s 0s ease;
 }
 
@@ -1371,7 +1380,8 @@ body15 {
     max-width: 30%;
   }
 }
-.menu__article .text, .menu__article .card {
+.menu__article .text,
+.menu__article .card {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
