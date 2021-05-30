@@ -120,9 +120,7 @@ html {
   }
 }
 
-.like .before-icon:hover,
-.like:hover,
-.like .after-icon:hover {
+.like .before-icon:hover, .like:hover, .like .after-icon:hover {
   transition: 0.5s 0s ease;
 }
 
@@ -414,63 +412,63 @@ footer i {
   animation: rotation360 ease 0.5s 1;
 }
 
-body1 {
+.fade-1 {
   animation: fade 0.4s;
 }
 
-body2 {
+.fade-2 {
   animation: fade 0.8s;
 }
 
-body3 {
+.fade-3 {
   animation: fade 1.2s;
 }
 
-body4 {
+.fade-4 {
   animation: fade 1.6s;
 }
 
-body5 {
+.fade-5 {
   animation: fade 2s;
 }
 
-body6 {
+.fade-6 {
   animation: fade 2.4s;
 }
 
-body7 {
+.fade-7 {
   animation: fade 2.8s;
 }
 
-body8 {
+.fade-8 {
   animation: fade 3.2s;
 }
 
-body9 {
+.fade-9 {
   animation: fade 3.6s;
 }
 
-body10 {
+.fade-10 {
   animation: fade 4s;
 }
 
-body11 {
+.fade-11 {
   animation: fade 4.4s;
 }
 
-body12 {
+.fade-12 {
   animation: fade 4.8s;
 }
 
-body13 {
+.fade-13 {
   animation: fade 5.2s;
 }
 
-body14 {
+.fade-14 {
   animation: fade 5.6s;
 }
 
-body15 {
+.fade-15 {
   animation: fade 6s;
 }
 
@@ -968,63 +966,63 @@ figure figcaption {
   animation: rotation360 ease 0.5s 1;
 }
 
-body1 {
+.fade-1 {
   animation: fade 0.4s;
 }
 
-body2 {
+.fade-2 {
   animation: fade 0.8s;
 }
 
-body3 {
+.fade-3 {
   animation: fade 1.2s;
 }
 
-body4 {
+.fade-4 {
   animation: fade 1.6s;
 }
 
-body5 {
+.fade-5 {
   animation: fade 2s;
 }
 
-body6 {
+.fade-6 {
   animation: fade 2.4s;
 }
 
-body7 {
+.fade-7 {
   animation: fade 2.8s;
 }
 
-body8 {
+.fade-8 {
   animation: fade 3.2s;
 }
 
-body9 {
+.fade-9 {
   animation: fade 3.6s;
 }
 
-body10 {
+.fade-10 {
   animation: fade 4s;
 }
 
-body11 {
+.fade-11 {
   animation: fade 4.4s;
 }
 
-body12 {
+.fade-12 {
   animation: fade 4.8s;
 }
 
-body13 {
+.fade-13 {
   animation: fade 5.2s;
 }
 
-body14 {
+.fade-14 {
   animation: fade 5.6s;
 }
 
-body15 {
+.fade-15 {
   animation: fade 6s;
 }
 
@@ -1261,9 +1259,7 @@ body15 {
   }
 }
 
-.like .after-icon:hover,
-.like:hover,
-.like .before-icon:hover {
+.like .after-icon:hover, .like:hover, .like .before-icon:hover {
   transition: 0.5s 0s ease;
 }
 
@@ -1380,8 +1376,7 @@ body15 {
     max-width: 30%;
   }
 }
-.menu__article .text,
-.menu__article .card {
+.menu__article .text, .menu__article .card {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
