@@ -24,9 +24,10 @@
   input {
     color: $color-background-2;
     background-color: transparent;
+   overflow-x: visible;
     border: 0;
     padding: 15px 10px;
-    width: 50%;
+    width: 10%;
     text-align: center;
     &:focus {
       outline: none;
