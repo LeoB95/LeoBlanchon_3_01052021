@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 /* Ombres des cards */
 /* Media queries responsive */
 /*Coleurs de base du site */
@@ -75,13 +75,13 @@ html {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .home__button {
     margin: auto;
-    max-width: 70%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 1024px) {
   .home__button {
     margin: auto;
-    max-width: 70%;
+    width: 30%;
   }
 }
 .home__button a {
@@ -120,7 +120,9 @@ html {
   }
 }
 
-.like .before-icon:hover, .like:hover, .like .after-icon:hover {
+.like .before-icon:hover,
+.like:hover,
+.like .after-icon:hover {
   transition: 0.5s 0s ease;
 }
 
@@ -1214,13 +1216,13 @@ figure figcaption {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .home__button {
     margin: auto;
-    max-width: 70%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 1024px) {
   .home__button {
     margin: auto;
-    max-width: 70%;
+    width: 30%;
   }
 }
 .home__button a {
@@ -1259,7 +1261,9 @@ figure figcaption {
   }
 }
 
-.like .after-icon:hover, .like:hover, .like .before-icon:hover {
+.like .after-icon:hover,
+.like:hover,
+.like .before-icon:hover {
   transition: 0.5s 0s ease;
 }
 
@@ -1376,7 +1380,8 @@ figure figcaption {
     max-width: 30%;
   }
 }
-.menu__article .text, .menu__article .card {
+.menu__article .text,
+.menu__article .card {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
