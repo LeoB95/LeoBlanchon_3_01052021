@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 /* Ombres des cards */
 /* Media queries responsive */
 /*Coleurs de base du site */
@@ -30,7 +30,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   background-color: white;
@@ -43,10 +42,6 @@ body {
   body {
     max-width: 1400px;
   }
-}
-
-html {
-  animation: fade;
 }
 
 /*fichier imports police*/
@@ -117,6 +112,7 @@ html {
     text-align: center;
     width: 40%;
     margin: auto;
+    margin-bottom: 30px;
   }
 }
 
@@ -125,7 +121,6 @@ html {
 }
 
 .like {
-  display: inline;
   position: relative;
   margin-right: 22px;
   margin-top: 4px;
@@ -144,9 +139,6 @@ html {
   color: #f77dd4, #ab65fa;
   opacity: 1;
   z-index: 999;
-}
-.like .after-icon:active {
-  color: #f77dd4, #ab65fa;
 }
 .like:hover {
   cursor: pointer;
@@ -167,6 +159,7 @@ header {
   display: flex;
   border-bottom: 2px solid #f4f4f4;
   align-items: center;
+  background: white;
 }
 header .logo {
   display: flex;
@@ -590,7 +583,7 @@ footer i {
   overflow-x: visible;
   border: 0;
   padding: 15px 10px;
-  width: 10%;
+  width: 30%;
   text-align: center;
 }
 .search__location input:focus {
@@ -598,6 +591,7 @@ footer i {
 }
 .search__location input::placeholder {
   font-weight: bold;
+  overflow: visible;
 }
 
 .home__main__h1 {
@@ -792,10 +786,6 @@ li::marker {
     height: 100%;
   }
 }
-.article2 a {
-  text-decoration: none;
-  background: transparent;
-}
 .article2__link {
   text-decoration: none;
   color: black;
@@ -803,7 +793,10 @@ li::marker {
 .article2__rest {
   background-color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
   margin: 15px;
   min-width: 0;
   box-shadow: 2px 2px 10px 2px #e9e9e9;
@@ -814,23 +807,29 @@ li::marker {
     width: 40%;
   }
 }
-.article2__title {
-  padding-left: 10px;
-  display: inline-flex;
+.article2 .rest-text {
+  display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-left: 10px;
+  line-height: 0.4;
 }
-.article2__title p {
-  display: block;
+.article2 .rest-text__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.article2 .rest-text__title p {
   font-size: 16px;
 }
-.article2 strong {
-  display: block;
-  background: white;
+.article2 .rest-text strong {
   color: black;
   font-weight: bold;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  padding-top: 10px;
 }
 .article2 img {
   position: relative;
@@ -1257,6 +1256,7 @@ figure figcaption {
     text-align: center;
     width: 40%;
     margin: auto;
+    margin-bottom: 30px;
   }
 }
 
@@ -1265,7 +1265,6 @@ figure figcaption {
 }
 
 .like {
-  display: inline;
   position: relative;
   margin-right: 22px;
   margin-top: 4px;
@@ -1284,9 +1283,6 @@ figure figcaption {
   color: #f77dd4, #ab65fa;
   opacity: 1;
   z-index: 999;
-}
-.like .after-icon:active {
-  color: #f77dd4, #ab65fa;
 }
 .like:hover {
   cursor: pointer;
@@ -1323,15 +1319,12 @@ figure figcaption {
   position: absolute;
   width: 100%;
   margin-top: -30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px 0 0 20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 0 0 5px;
   height: 10%;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
-}
-.menu h3 .like {
-  padding-right: 20px;
 }
 .menu h4 {
   margin: 40px 0;
@@ -1377,7 +1370,7 @@ figure figcaption {
     max-width: 30%;
   }
 }
-.menu__article .text, .menu__article .card {
+.menu__article .card .text, .menu__article .card .card {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
