@@ -9,6 +9,9 @@
 @mixin color-button {
   background: linear-gradient(#ff79da, #9356dc);
 }
+@mixin font-gradient {
+  color: linear-gradient(#ff79da, #9356dc);
+}
 /* Media queries responsive */
 @mixin smartphone-size {
   @media only screen and (max-width: 767px) {
