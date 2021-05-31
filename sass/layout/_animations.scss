@@ -1,4 +1,4 @@
-@import "../utils/mixins";
+ @import "../utils/mixins";
 @import "../utils/variables";
 
 .card {
@@ -30,7 +30,10 @@
   }
   .circle-button {
     display: none;
+    background: $color-white;
+
     width: 30%;
+    padding-right: 10px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
   }
@@ -38,6 +41,7 @@
     display: flex;
     padding-top: 8px;
     font-size: 24px;
+    background: $color-tertiary;
     color: $color-white;
     transform: rotate(360deg);
   }
@@ -71,7 +75,7 @@
 }
 
 @for $i from 1 through 15 {
-  body#{$i} {
+  .fade-#{$i} {
     animation: fade 0.4s * $i;
   }
 }
