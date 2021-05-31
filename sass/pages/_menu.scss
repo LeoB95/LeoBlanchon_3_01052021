@@ -21,14 +21,23 @@
     font-family: $title-font;
     background-color: $color-background-menu;
     position: absolute;
-    width: 100%;
+    width: 99%;
     margin-top: -30px;
     margin-left: 0;
     margin-right: 0;
-    padding: 20px 0 0 5px;
+    padding: 20px 0 0 20px;
     height: 10%;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
+  }
+  .like {
+    margin-right: 30px;
+    .fa-heart:before {
+      background: -webkit-linear-gradient(#9356dc, #ff79da);
+      background-clip: content-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   h4 {
@@ -65,36 +74,37 @@
   }
   .card {
     line-height: 0;
-    @extend %text-overflow;
+    color: $color-black;
+
     @include desktop-size {
       max-width: 30%;
     }
-
-    %text-overflow {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
+  }
+  %text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .text {
+    color: $color-black;
+    width: 80%;
+    padding: 10px;
+    @extend %text-overflow;
   }
   .title__choice {
     display: block;
     font-size: 16px;
     font-weight: $font-weight;
+    color: $color-black;
     padding: 10px;
-    padding-bottom: 5;
     margin-left: 10px;
+    @extend %text-overflow;
   }
   .subTitle__choice {
     display: flex;
-    color: $color-footer;
-    font-size: 12px;
-    font-weight: normal;
+    font-size: 10px;
     text-align: left;
-    margin-left: 20px;
-  }
-  .text {
-    width: 80%;
-    padding: 10px;
-    @extend %text-overflow;
+    padding-left: 20px;
+    color: $color-black;
   }
 }
