@@ -33,7 +33,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  color: black;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   text-align: left;
@@ -63,7 +62,7 @@ body {
   box-shadow: 0 5px 15px 0 #c3c3c3;
   font-weight: bold;
   margin: 20px;
-  padding: 15px 30px;
+  padding: 5px 30px;
   transition: 0.2s;
   width: 70%;
 }
@@ -101,7 +100,7 @@ body {
   box-shadow: 0 5px 15px 0 #c3c3c3;
   font-weight: bold;
   margin: 20px;
-  padding: 15px 30px;
+  padding: 5px 30px;
   transition: 0.2s;
   width: auto;
 }
@@ -111,7 +110,9 @@ body {
     justify-content: center;
     text-align: center;
     width: 40%;
-    margin: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
   }
 }
@@ -122,11 +123,18 @@ body {
 
 .like {
   position: relative;
+  text-align: right;
   margin-right: 22px;
   margin-top: 4px;
 }
+.like .fa-heart:before {
+  align-items: center;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .like i {
-  color: #9d9d9d;
   font-size: 24px;
   left: 50%;
 }
@@ -136,7 +144,6 @@ body {
   position: absolute;
 }
 .like .after-icon:hover {
-  color: #f77dd4, #ab65fa;
   opacity: 1;
   z-index: 999;
 }
@@ -147,6 +154,7 @@ body {
 }
 .like .before-icon:hover {
   opacity: 0;
+  overflow: hidden;
 }
 
 /*Coleurs de base du site */
@@ -196,7 +204,7 @@ header .arrow {
 /* Police d'écriture */
 footer {
   background-color: #333;
-  font: white;
+  color: white;
   padding-top: 20px;
   padding-bottom: 20px;
   width: auto;
@@ -227,10 +235,10 @@ footer a {
   text-decoration: none;
   color: white;
   font-family: "Roboto", sans-serif;
-  line-height: 0;
 }
 footer .links {
   text-align: left;
+  line-height: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   footer .links {
@@ -249,19 +257,19 @@ footer i {
 /*Animation de l'icone validation */
 @keyframes rotation360 {
   0% {
-    transform: rotade(-90deg);
+    transform: rotate(-90deg);
   }
   20% {
-    transform: rotade(-75deg) scale(1.03);
+    transform: rotate(-75deg) scale(1.03);
   }
   40% {
-    transform: rotade(-60deg) scale(1.08);
+    transform: rotate(-60deg) scale(1.08);
   }
   60% {
     transform: rotate(-45deg) scale(1.15);
   }
   80% {
-    transform: rotade(-30deg) scale(1.08);
+    transform: rotate(-30deg) scale(1.08);
   }
   100% {
     transform: rotate(5deg) scale(1);
@@ -364,7 +372,9 @@ footer i {
 }
 .card .circle-button {
   display: none;
+  background: white;
   width: 30%;
+  padding-right: 10px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -372,6 +382,7 @@ footer i {
   display: flex;
   padding-top: 8px;
   font-size: 24px;
+  background: #99e2d0;
   color: white;
   transform: rotate(360deg);
 }
@@ -602,6 +613,7 @@ footer i {
   font-size: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 30px;
 }
 @media only screen and (min-width: 1024px) {
   .home__main__h1 {
@@ -609,6 +621,7 @@ footer i {
   }
 }
 .home__main__subTitle {
+  padding-left: 30px;
   font-family: "Roboto", sans-serif;
 }
 @media only screen and (min-width: 1024px) {
@@ -623,7 +636,8 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  padding-left: 30px;
   width: 100%;
 }
 @media only screen and (min-width: 1024px) {
@@ -640,7 +654,7 @@ h2 {
   text-align: center;
   padding: 30px 10px;
   background-color: white;
-  margin: 10px 5px;
+  margin: 10px 5px 10px;
 }
 .article1__stepByStep {
   display: flex;
@@ -662,29 +676,30 @@ h2 {
 }
 .article1__step-link {
   flex: 1 0 auto;
-  margin-bottom: 20px;
   text-decoration: none;
   background: #e9e9e9;
   border-radius: 30px;
   text-align: justify;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   color: black;
   font-weight: bold;
-  padding: 20px 15px;
+  padding: 5px 15px;
   box-shadow: 0 5px 15px 0 #c3c3c3;
 }
 .article1__step-link:hover {
   background: #f2eafb;
   box-shadow: 2px 2px 10px 2px #e4d5f6;
 }
+.article1__step-link:hover i {
+  color: #9356dc;
+}
 .article1__step-link ul {
   display: flex;
   align-items: center;
-}
-.article1__step-link__step-icon {
-  color: #9356dc;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .article1__step-link {
@@ -824,6 +839,7 @@ li::marker {
 }
 .article2 .rest-text__title p {
   font-size: 16px;
+  color: black;
 }
 .article2 .rest-text strong {
   color: black;
@@ -834,7 +850,7 @@ li::marker {
 .article2 img {
   position: relative;
   width: 100%;
-  max-height: 200px;
+  height: 170px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -853,7 +869,7 @@ figure {
   margin: 0;
 }
 figure img {
-  max-height: 200px;
+  height: 170px;
   width: 100%;
   object-fit: cover;
   clear: right;
@@ -925,7 +941,9 @@ figure figcaption {
 }
 .card .circle-button {
   display: none;
+  background: white;
   width: 30%;
+  padding-right: 10px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -933,6 +951,7 @@ figure figcaption {
   display: flex;
   padding-top: 8px;
   font-size: 24px;
+  background: #99e2d0;
   color: white;
   transform: rotate(360deg);
 }
@@ -1112,19 +1131,19 @@ figure figcaption {
 /*Animation de l'icone validation */
 @keyframes rotation360 {
   0% {
-    transform: rotade(-90deg);
+    transform: rotate(-90deg);
   }
   20% {
-    transform: rotade(-75deg) scale(1.03);
+    transform: rotate(-75deg) scale(1.03);
   }
   40% {
-    transform: rotade(-60deg) scale(1.08);
+    transform: rotate(-60deg) scale(1.08);
   }
   60% {
     transform: rotate(-45deg) scale(1.15);
   }
   80% {
-    transform: rotade(-30deg) scale(1.08);
+    transform: rotate(-30deg) scale(1.08);
   }
   100% {
     transform: rotate(5deg) scale(1);
@@ -1207,7 +1226,7 @@ figure figcaption {
   box-shadow: 0 5px 15px 0 #c3c3c3;
   font-weight: bold;
   margin: 20px;
-  padding: 15px 30px;
+  padding: 5px 30px;
   transition: 0.2s;
   width: 70%;
 }
@@ -1245,7 +1264,7 @@ figure figcaption {
   box-shadow: 0 5px 15px 0 #c3c3c3;
   font-weight: bold;
   margin: 20px;
-  padding: 15px 30px;
+  padding: 5px 30px;
   transition: 0.2s;
   width: auto;
 }
@@ -1255,7 +1274,9 @@ figure figcaption {
     justify-content: center;
     text-align: center;
     width: 40%;
-    margin: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
   }
 }
@@ -1266,11 +1287,18 @@ figure figcaption {
 
 .like {
   position: relative;
+  text-align: right;
   margin-right: 22px;
   margin-top: 4px;
 }
+.like .fa-heart:before {
+  align-items: center;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .like i {
-  color: #9d9d9d;
   font-size: 24px;
   left: 50%;
 }
@@ -1280,7 +1308,6 @@ figure figcaption {
   position: absolute;
 }
 .like .after-icon:hover {
-  color: #f77dd4, #ab65fa;
   opacity: 1;
   z-index: 999;
 }
@@ -1291,6 +1318,7 @@ figure figcaption {
 }
 .like .before-icon:hover {
   opacity: 0;
+  overflow: hidden;
 }
 
 /*Coleurs de base du site */
@@ -1317,14 +1345,23 @@ figure figcaption {
   font-family: "Shrikhand", cursive;
   background-color: #f6f6f6;
   position: absolute;
-  width: 100%;
+  width: 99%;
   margin-top: -30px;
   margin-left: 0;
   margin-right: 0;
-  padding: 20px 0 0 5px;
+  padding: 20px 0 0 20px;
   height: 10%;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+}
+.menu .like {
+  margin-right: 30px;
+}
+.menu .like .fa-heart:before {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu h4 {
   margin: 40px 0;
@@ -1364,36 +1401,37 @@ figure figcaption {
 }
 .menu__article .card {
   line-height: 0;
+  color: black;
 }
 @media only screen and (min-width: 1024px) {
   .menu__article .card {
     max-width: 30%;
   }
 }
-.menu__article .card .text, .menu__article .card .card {
+.menu__article .title__choice, .menu__article .text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.menu__article .text {
+  color: black;
+  width: 80%;
+  padding: 10px;
 }
 .menu__article .title__choice {
   display: block;
   font-size: 16px;
   font-weight: bold;
+  color: black;
   padding: 10px;
-  padding-bottom: 5;
   margin-left: 10px;
 }
 .menu__article .subTitle__choice {
   display: flex;
-  color: #333;
-  font-size: 12px;
-  font-weight: normal;
+  font-size: 10px;
   text-align: left;
-  margin-left: 20px;
-}
-.menu__article .text {
-  width: 80%;
-  padding: 10px;
+  padding-left: 20px;
+  color: black;
 }
 
 /*Coleurs de base du site */
