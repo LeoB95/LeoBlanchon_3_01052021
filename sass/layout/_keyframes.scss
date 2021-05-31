@@ -1,16 +1,16 @@
-/*Animation de l'icone validation */
+ /*Animation de l'icone validation */
 
 @keyframes rotation360 {
   0% {
-    transform: rotade(-90deg);
+    transform: rotate(-90deg);
   }
 
   20% {
-    transform: rotade(-75deg) scale(1.03);
+    transform: rotate(-75deg) scale(1.03);
   }
 
   40% {
-    transform: rotade(-60deg) scale(1.08);
+    transform: rotate(-60deg) scale(1.08);
   }
 
   60% {
@@ -18,7 +18,7 @@
   }
 
   80% {
-    transform: rotade(-30deg) scale(1.08);
+    transform: rotate(-30deg) scale(1.08);
   }
   100% {
     transform: rotate(5deg) scale(1);
