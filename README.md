@@ -5,8 +5,7 @@ Projet 3 / Oh My Food
 LIEN WEB GIT PAGES =
 https://leob95.github.io/LeoBlanchon_3_01052021/
 
- ![Reservia](https://user-images.githubusercontent.com/78887001/116443151-95911f80-a853-11eb-80f7-b1cc39e5a194.png)
-
+ 
  ![Windows-0078D6](https://user-images.githubusercontent.com/78887001/116440382-bb68f500-a850-11eb-8cb5-c850666ada92.jpg)
 ![Made for-VSCode-1f425f](https://user-images.githubusercontent.com/78887001/116440405-c2900300-a850-11eb-858d-5e26e2173702.jpg)
 ![HTML5-E34F26](https://user-images.githubusercontent.com/78887001/116440423-c885e400-a850-11eb-93fd-802c8f768fd8.jpg)
