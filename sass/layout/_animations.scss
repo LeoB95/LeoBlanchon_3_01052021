@@ -1,4 +1,4 @@
- @import "../utils/mixins";
+@import "../utils/mixins";
 @import "../utils/variables";
 
 .card {
@@ -91,6 +91,7 @@
   top: 0;
   text-align: center;
   z-index: 999;
+
   &::before {
     content: "";
     display: inline-block;
@@ -164,4 +165,4 @@
     height: 50%;
     transform-origin: 100% 100%;
   }
-}
+} 
