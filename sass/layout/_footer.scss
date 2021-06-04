@@ -7,6 +7,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   width: auto;
+
   & img {
     filter: invert(1);
     max-width: 150px;
@@ -15,13 +16,16 @@ footer {
     @include tablette-size {
       max-width: none;
       justify-content: center;
-      margin-left: 200px;
     }
     @include desktop-size {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 30px;
       text-align: center;
       justify-content: center;
-      margin-left: 450px;
-      max-width: 400px;
+      max-width: 200px;
+      width: auto;
     }
   }
 
@@ -34,13 +38,16 @@ footer {
   }
 
   .links {
+    font-size: 12px;
     text-align: left;
     line-height: 0;
+
     @include tablette-size {
       text-align: center;
     }
     @include desktop-size {
       text-align: center;
+      height: auto;
     }
   }
 
