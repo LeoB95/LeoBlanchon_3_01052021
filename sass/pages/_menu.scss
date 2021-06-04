@@ -21,11 +21,12 @@
     font-family: $title-font;
     background-color: $color-background-menu;
     position: absolute;
-    width: 99%;
+    width: 98.43%;
     margin-top: -30px;
     margin-left: 0;
     margin-right: 0;
-    padding: 20px 0 0 20px;
+    padding-top: 20px;
+    padding-left: 20px;
     height: 10%;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
@@ -75,10 +76,12 @@
   .card {
     line-height: 0;
     color: $color-black;
-
     @include desktop-size {
       max-width: 30%;
     }
+  }
+  .price {
+    padding-bottom: 10px;
   }
   %text-overflow {
     overflow: hidden;
@@ -86,9 +89,9 @@
     white-space: nowrap;
   }
   .text {
+    width: 100%;
+    display: block;
     color: $color-black;
-    width: 80%;
-    padding: 10px;
     @extend %text-overflow;
   }
   .title__choice {
@@ -97,14 +100,17 @@
     font-weight: $font-weight;
     color: $color-black;
     padding: 10px;
-    margin-left: 10px;
+    margin-bottom: 0;
+
     @extend %text-overflow;
   }
-  .subTitle__choice {
-    display: flex;
-    font-size: 10px;
-    text-align: left;
-    padding-left: 20px;
+  p.subTitle__choice {
+    display: block;
+    background: none;
+    margin-top: 0;
+    padding: 10px;
+    font-size: 14px;
     color: $color-black;
+    @extend %text-overflow;
   }
 }
