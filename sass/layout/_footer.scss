@@ -14,8 +14,7 @@ footer {
     margin-left: 40px;
 
     @include tablette-size {
-      max-width: none;
-      justify-content: center;
+       justify-content: center;
     }
     @include desktop-size {
       display: flex;
