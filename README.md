@@ -1,6 +1,6 @@
 # LeoBlanchon_3_01052021
 
-Formation OpenClassrooms - Parcours développeur web.
+**Formation OpenClassrooms - Parcours développeur web.**
  
 GIT PAGES https://leob95.github.io/P3_Leo_Blanchon_OhMyFood/
  
@@ -15,11 +15,10 @@ GIT PAGES https://leob95.github.io/P3_Leo_Blanchon_OhMyFood/
  
  
 ## Livrables
+ 
+- **Page d’accueil avec les restaurants proposés**
+- **Pages de menu (x4 restaurants)**
 
-### Pages à intégrer selon les maquettes
-
-- **Page d’accueil**
-- **Pages de menu (x4)**
 
 
 ### Animation
@@ -36,12 +35,14 @@ GIT PAGES https://leob95.github.io/P3_Leo_Blanchon_OhMyFood/
 - Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser dela droite vers la gauche. Pour cette première version, l’effet peut apparaître au survolau lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension. Un exemple de l’effet attendu est fourni
 
  
+ 
 ## Technologies
 
 - **Autorisés:** HTML / CSS / Sass 
 
 - **Interdit:** Javascript / Frameworks CSS / Inline CSS
  
+
 
 ## Notes
 
