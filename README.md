@@ -38,9 +38,9 @@ GIT PAGES https://leob95.github.io/P3_Leo_Blanchon_OhMyFood/
  
 ## Technologies
 
-**Autorisés:** HTML / CSS / Sass 
+- **Autorisés:** HTML / CSS / Sass 
 
-**Interdit:** Javascript / Frameworks CSS / Inline CSS
+- **Interdit:** Javascript / Frameworks CSS / Inline CSS
  
 
 ## Notes
