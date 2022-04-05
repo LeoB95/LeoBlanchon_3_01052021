@@ -16,6 +16,9 @@
   padding: 5px 30px;
   transition: 0.2s;
   width: 70%;
+      &:hover {
+        transform: scale(1.08);
+      }
   @include tablette-size {
     margin: auto;
     width: 50%;
@@ -49,6 +52,9 @@
   margin: 20px;
   padding: 5px 30px;
   transition: 0.2s;
+        &:hover {
+          transform: scale(1.08);
+        }
   @include desktop-size {
     display: flex;
     justify-content: center;

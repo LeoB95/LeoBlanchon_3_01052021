@@ -7,12 +7,13 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   width: auto;
-
   & img {
     filter: invert(1);
     max-width: 150px;
     margin-left: 40px;
-
+    &:hover {
+      transform: scale(1.08);
+    }
     @include tablette-size {
        justify-content: center;
     }
@@ -34,6 +35,9 @@ footer {
     text-decoration: none;
     color: $color-white;
     font-family: $content-font;
+        &:hover {
+          transform: scale(1.08);
+        }
   }
 
   .links {
