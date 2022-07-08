@@ -2,7 +2,8 @@
 
 **Formation OpenClassrooms - Parcours développeur web.**
  
-GIT PAGES https://leob95.github.io/P3_Leo_Blanchon_OhMyFood/
+GIT PAGES https://leob95.github.io/OC_P3_OhMyFood/
+
  
  
  # Projet n°3 / OhMyFood
